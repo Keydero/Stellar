@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bulma/css/bulma.css";
+
+.is-transparent {
+	background-color: rgba(255, 255, 255, 0);
+}
+.navbar {
+	background-color: rgba(255, 255, 255, 0);
+}
+.navbar-item {
+	color: rgba(255, 255, 255, 0.5);
+	font-weight: bold;
+}
+
+a.navbar-item.is-active, a.navbar-link.is-active {
+    color:white;
+    &:hover {
+    	background-color: rgba(0, 0, 0, 0);
+    }
+}
+

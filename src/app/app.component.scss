@@ -1,0 +1,28 @@
+header {
+	background-color: #82589F;
+}
+.header-wrapper {
+	.header-intro{
+		margin-top: 50px;
+	}
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.header-title {
+	line-height: 40px;
+	color: white;
+	text-align: center;
+	.stellar {
+	font-size: 3em;
+	font-weight: bold;
+	 word-spacing: 10px;
+		}
+	}
+}
+
+
+
+
+
