@@ -1,5 +1,43 @@
 <section class="staff">
-	<div class="staff-wrapper">
-		
-	</div>
+<div
+  ng2-carouselamos
+  [width]="500"
+  [items]="items"
+  [$item]="itemTemplate"
+  [$prev]="prevTemplate"
+  [$next]="nextTemplate"
+  (onSelectedItem)="selectedItem = $event.item; selectedIndex = $event.index"
+></div>
+
+<ng-template #prevTemplate>
+  <img src="prev.png" />
+</ng-template>
+
+<ng-template #nextTemplate>
+  <img src="next.png" />
+</ng-template>
+
+<ng-template let-item let-i="index" #itemTemplate>
+  <div style="min-width: 100%">
+    <img *ngIf="i === selectedIndex" src="{{item.name}}">
+    <span *ngIf="i !== selectedIndex"> hey {{i}}. {{item.name}}</span>
+  </div>
+</ng-template>
 </section>
+
+
+
+<!-- 	<div class="staff-wrapper">
+		<div class="staff-header">
+			<img src="">
+		</div>
+		<div class="staff-content">
+			<div class="staff-content-header">
+				<h4> Oussama Keddar </h4>
+				<p> Full stack Developper  </p>
+			</div>
+			<div class="staff-content-body">
+				<p> Oussama is a very skilled. He used to work for no one. He puts passion in every project and creates amazing interfaces </p>
+			</div>
+		</div>
+	</div> -->
