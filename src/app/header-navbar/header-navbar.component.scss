@@ -1,13 +1,15 @@
 .menu {
 	display: none;
 	position: absolute;
-	background-color: white;
 	width: 200px;
 	top: 100px;
 	border-radius: 8px;
+	background-color: #a4b0be;
+	padding: 25px;
 }
 .menu-list {
 	li {
+		margin-right: 10px;
 		a {
 			&:hover {
 				color: red;
